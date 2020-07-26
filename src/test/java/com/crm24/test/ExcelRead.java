@@ -1,13 +1,11 @@
 package com.crm24.test;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 public class ExcelRead {
     public static void main(String[]  args)  {
@@ -23,7 +21,7 @@ public class ExcelRead {
         }
 
         XSSFSheet sheet = workbook.getSheet("employee");
-        Cell value = sheet.getRow(1).getCell(1);
+        XSSFCell value = sheet.getRow(1).getCell(1);
         System.out.println(value);
         int usedRows = sheet.getPhysicalNumberOfRows();
         //it counts only used cells
@@ -45,6 +43,16 @@ public class ExcelRead {
                 System.out.println(sheet.getRow(i).getCell(1));
             }
         }
+
+        try {
+            FileInputStream fileInputStream = new FileInputStream("src/Book1.xlsx");
+            fileInputStream.close();
+            workbook.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("couldn't find excel file");
+        }
+
     }
 
 }
