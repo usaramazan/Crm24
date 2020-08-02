@@ -2,6 +2,7 @@ package com.crm24.stepdefinitions;
 
 import com.crm24.pages.CrmLoginPage;
 import com.crm24.pages.CrmPollPage;
+import com.crm24.utilities.BrowserUtils;
 import com.crm24.utilities.ConfigurationReader;
 import com.crm24.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -26,7 +27,6 @@ public class Crm_Upload_StepDefination {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
-
     @Given("User click on poll button")
     public void user_click_on_poll_button() throws InterruptedException {
         crmPollPage.pollTab.click();
@@ -49,21 +49,30 @@ public class Crm_Upload_StepDefination {
 
 
     @Then("Select document from bixtrix")
-    public void selectDocumentFromBixtrix() {
-        String windowHandle = Driver.getDriver().getWindowHandle();
-        Driver.getDriver().switchTo().window(windowHandle);
-        Driver.getDriver().findElement(By.xpath("(//a[@class='bx-file-dialog-content-link bx-file-dialog-icon bx-file-dialog-icon-file'])[2]")).click();
+    public void selectDocumentFromBixtrix() throws InterruptedException {
+//        String windowHandle = Driver.getDriver().getWindowHandle();
+//        Driver.getDriver().switchTo().window(windowHandle);
+        BrowserUtils.switchToWindow("Select one or more documents");
+        Thread.sleep(3000);
+      //  BrowserUtils.waitForClickability(crmPollPage.selectDocument,3);
+       // Driver.getDriver().findElement(By.xpath("//a[.='Logo.gif']")).click();
+        //BrowserUtils.waitForClickability(crmPollPage.selectDocument,3);
+        Thread.sleep(3000);
+        //BrowserUtils.clickWithJS(Driver.getDriver().findElement(By.xpath("//a[.='Logo.gif']")));
+        crmPollPage.logoLink.click();
 
     }
 
     @And("Click Select document button")
-    public void clickSelectDocumentButton() {
+    public void clickSelectDocumentButton() throws InterruptedException {
+        Thread.sleep(3000);
         crmPollPage.selectDocument.click();
     }
 
     @And("Verify uploaded item there")
     public void verifyUploadedItemThere() {
         Assert.assertTrue(crmPollPage.uploadedItem.isDisplayed());
+        Driver.closeDriver();
     }
 
     @Then("User click on Upload files and images")
