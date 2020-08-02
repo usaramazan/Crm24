@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/crm24/stepdefinitions",
         dryRun = false,
-        tags = "@here"
+        tags = "@smoke"
 )
 
 public class CukeRunner {

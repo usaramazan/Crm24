@@ -1,6 +1,7 @@
 package com.crm24.stepdefinitions;
 
 import com.crm24.pages.CrmLoginPage;
+import com.crm24.utilities.BrowserUtils;
 import com.crm24.utilities.Driver;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
@@ -25,10 +26,12 @@ public class Hooks {
     public void tearDown(Scenario scenario){
 
         if (scenario.isFailed()) {
-
+//            byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+//            scenario.attach(screenshot, "image/png", scenario.getName());
+            // take screenshot using selenium
             byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", scenario.getName());
-
+            // attach to report
+            scenario.embed(screenshot, "image/png", scenario.getName());
         }
 
         Driver.closeDriver();

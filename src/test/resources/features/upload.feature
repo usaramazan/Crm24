@@ -4,7 +4,7 @@ Feature: As a user, I should be able to create a
 
   Background:User is on given url
     Given User go into given url
-  @here
+  @smoke
   Scenario Outline:User should be able to upload file from bixtrix
 
     Given User enters "<username>" and "<password>"
