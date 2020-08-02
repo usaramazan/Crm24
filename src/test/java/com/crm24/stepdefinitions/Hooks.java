@@ -31,7 +31,7 @@ public class Hooks {
             // take screenshot using selenium
             byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             // attach to report
-            scenario.embed(screenshot, "image/png", scenario.getName());
+            scenario.attach(screenshot, "image/png", scenario.getName());
         }
 
         Driver.closeDriver();

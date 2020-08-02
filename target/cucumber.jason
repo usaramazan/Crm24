@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4923000000,
+              "duration": 11289000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-08-02T02:54:06.554Z",
+        "start_timestamp": "2020-08-02T20:42:16.956Z",
         "line": 20,
         "name": "User should be able to upload file from bixtrix",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 381000000,
+              "duration": 372000000,
               "status": "passed"
             },
             "line": 10,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 3380000000,
+              "duration": 4640000000,
               "status": "passed"
             },
             "line": 11,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 2485000000,
+              "duration": 2220000000,
               "status": "passed"
             },
             "line": 12,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 2373000000,
+              "duration": 2143000000,
               "status": "passed"
             },
             "line": 13,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 109000000,
+              "duration": 97000000,
               "status": "passed"
             },
             "line": 14,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 6332000000,
+              "duration": 6350000000,
               "status": "passed"
             },
             "line": 15,
@@ -116,7 +116,7 @@
           },
           {
             "result": {
-              "duration": 3145000000,
+              "duration": 3122000000,
               "status": "passed"
             },
             "line": 16,
@@ -128,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 404000000,
+              "duration": 521000000,
               "status": "passed"
             },
             "line": 17,
@@ -141,150 +141,7 @@
         ],
         "tags": [
           {
-            "name": "@here"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User is on given url",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3254000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User go into given url",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.userGoIntoGivenUrl()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-08-02T02:54:30.363Z",
-        "line": 21,
-        "name": "User should be able to upload file from bixtrix",
-        "description": "",
-        "id": "as-a-user--i-should-be-able-to-create-a;user-should-be-able-to-upload-file-from-bixtrix;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 325000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User enters \"helpdesk54@cybertekschool.com\" and \"UserUser\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"helpdesk54@cybertekschool.com\"",
-                  "offset": 12
-                },
-                {
-                  "val": "\"UserUser\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.crm24.stepdefinitions.CrmLogin_StepDefinition.user_enters_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3593000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User click on login button",
-            "match": {
-              "location": "com.crm24.stepdefinitions.CrmLogin_StepDefinition.userClickOnLoginButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2823000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User click on poll button",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.user_click_on_poll_button()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2355000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User click on upload file icon",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.user_click_on_upload_file_icon()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 129000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User click on Select document from Bixtrix",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.user_click_on_select_document_from_bixtrix()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[.\u003d\u0027Logo.gif\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.105)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mac1s-iMac.local\u0027, ip: \u0027192.168.1.94\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/9x/7w4m2p750_3...}, goog:chromeOptions: {debuggerAddress: localhost:50077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 62896101a05ea085cda9d9269f73c325\n*** Element info: {Using\u003dxpath, value\u003d//a[.\u003d\u0027Logo.gif\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.crm24.stepdefinitions.Crm_Upload_StepDefination.selectDocumentFromBixtrix(Crm_Upload_StepDefination.java:62)\n\tat ✽.Select document from bixtrix(file:///Users/home/IdeaProjects/Crm24/src/test/resources/features/upload.feature:15)\n",
-              "duration": 6463000000,
-              "status": "failed"
-            },
-            "line": 15,
-            "name": "Select document from bixtrix",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.selectDocumentFromBixtrix()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "Click Select document button",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.clickSelectDocumentButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "Verify uploaded item there",
-            "match": {
-              "location": "com.crm24.stepdefinitions.Crm_Upload_StepDefination.verifyUploadedItemThere()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@here"
+            "name": "@smoke"
           }
         ]
       }
