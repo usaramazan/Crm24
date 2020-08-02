@@ -4,7 +4,7 @@ Feature: As a user, I should be able to create a
 
   Background:User is on given url
     Given User go into given url
-  @here
+  @smoke
   Scenario Outline:User should be able to upload file from bixtrix
 
     Given User enters "<username>" and "<password>"
@@ -18,16 +18,16 @@ Feature: As a user, I should be able to create a
     Examples:
       | username                       | password |
       | helpdesk53@cybertekschool.com  | UserUser |
-      | helpdesk54@cybertekschool.com  | UserUser |
+#      | helpdesk54@cybertekschool.com  | UserUser |
 #      | hr53@cybertekschool.com        | UserUser |
 #      | hr54@cybertekschool.com        | UserUser |
 #      | marketing53@cybertekschool.com | UserUser |
 #      | marketing54@cybertekschool.com | UserUser |
 
 
-  Scenario: User should be able to upload file from local disk
-
-    Then User click on Upload files and images
+#  Scenario: User should be able to upload file from local disk
+#
+#    Then User click on Upload files and images
 
 #  Scenario:  User should be able to download from external drive
 #
