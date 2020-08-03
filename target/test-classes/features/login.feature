@@ -1,4 +1,4 @@
-@login-all
+@login_all
 Feature: User should be able to login with right credentials
   Scenario: go url
     Given User goes into given url
