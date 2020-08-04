@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/crm24/stepdefinitions",
         dryRun = false,
-        tags = "@smoke"
+        tags = "@smoke_test"
 )
 
 public class CukeRunner {
