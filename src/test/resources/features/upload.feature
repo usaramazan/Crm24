@@ -1,10 +1,10 @@
-
+@smoke_test
 Feature: As a user, I should be able to create a
   poll by clicking on Poll tab under Active Stream
 
   Background:User is on given url
     Given User go into given url
-  @smoke
+
   Scenario Outline:User should be able to upload file from bixtrix
 
     Given User enters "<username>" and "<password>"
